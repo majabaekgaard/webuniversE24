@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*styling af header/overskrift-sektion*/
+header {
+    padding: 45px;
+    text-align: center;
+    background-color: #FFF2CC;
+    position:relative;
+  color: #942f35;
+
+}
+
+.logoheader {
+    height: auto; /* Tilpas højden på logoet */
+    width: 7%;
+    position: fixed;
+    left: 70px;
+    top: 20px;
+    
+}
+
+
+/*styling af menubar*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color:#f8f2e1 ;
+}
+
+main {
+    position: fixed;
+    top: 120px;
+    left:0;
+    right:0;
+    background: #5a674b;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 10px 7%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    align-items:center
+    
+}
+
+main .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000000;
+}
+
+main .navbar ul {
+    list-style: none;
+}
+
+main .navbar ul li {
+    position: relative;
+    float: left;
+    width: 252px;
+    align-items:center
+}
+
+
+main .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    color: #ffffff;
+    display: block;
+}
+
+main .navbar ul li a:hover {
+    background: #7e8a6f;
+    color: #ffffff;
+}
+
+main .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #5a674b;
+    display: none;
+}
+
+main .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #(255, 28, 28);
+}
+
+main .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+main .navbar ul li:focus-within > ul,
+main .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+main label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+
+
+    main {
+        padding: 20px;
+    }
+    
+    main label {
+        display: block;
+    }
+
+    main .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background: #fff;
+        border-top: 1px solid rgba(255, 0, 0, 0.1);
+        display: none;
+    }
+
+    main .navbar ul li {
+        width: 100%;
+    }
+
+    main .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    main .navbar ul li ul li {
+        background: #eee;
+    }
+
+    main .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
