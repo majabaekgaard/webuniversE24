@@ -12,7 +12,6 @@
 
 
 
-
 /*styling af header/overskrift-sektion*/
 .titel {
     padding: 45px;
@@ -185,70 +184,3 @@ header label {
     }
 
 }
-
-
-.tekstfelt1 {
-    position: relative;
-    width: 3000px; /* Bredde på containeren */
-    display: flex
-}
-.overskrift1 {
-    position:fixed;
-    top: 200px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #942f35; /* Tekstfarve */
-    font-size: 40px;
-}
-
-.overskrift11{
-    position:fixed;
-    top: 280px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: large; 
-}
-
-.tekst1{
-    position:fixed;
-    top: 310px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: large; 
-    width: 500px;
-
-}
-
-
-.tekstfelt2 {
-    position: relative;
-    width: 3000px; /* Bredde på containeren */
-    display: flex
-}
-.overskrift2 {
-    position:fixed;
-    top: 520px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: large;
-}
-
-.tekst2{
-    position:fixed;
-    top: 500px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: large; 
-}
-
-.tekst22{
-    position:fixed;
-    top: 550px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: large; 
-    width: 500px;
-}
-
-
-
-
