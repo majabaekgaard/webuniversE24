@@ -205,7 +205,7 @@ header label {
     top: 280px; /* Placerer teksten 20px fra toppen */
     left: 20px; /* Placerer teksten 20px fra venstre */
     color: #292c78; /* Tekstfarve */
-    font-size: large; 
+    font-size: x-large
 }
 
 .tekst1{
@@ -226,24 +226,24 @@ header label {
 }
 .overskrift2 {
     position:fixed;
-    top: 520px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
+    top: 420px; 
+    left: 20px; 
     color: #292c78; /* Tekstfarve */
-    font-size: large;
+    font-size: x-large;
 }
 
 .tekst2{
     position:fixed;
-    top: 500px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
+    top: 400px; 
+    left: 20px; 
     color: #292c78; /* Tekstfarve */
     font-size: large; 
 }
 
 .tekst22{
     position:fixed;
-    top: 550px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
+    top: 450px; 
+    left: 20px; 
     color: #292c78; /* Tekstfarve */
     font-size: large; 
     width: 500px;
