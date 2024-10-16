@@ -10,12 +10,15 @@
     font-style: normal;
   }
 
+
+  
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
+  
 
 /*styling af header/overskrift-sektion*/
 .titel {
@@ -29,7 +32,6 @@
   bottom: 700px;
   padding: 30px;
   width: 100%;
-  z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
 
 }
 
@@ -47,7 +49,6 @@ a{
     position: fixed;
     left: 70px;
     top: 20px;
-    z-index: 1000; /* Sørger for at logo altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
     
 }
 
@@ -55,7 +56,6 @@ a{
 
 body {
     font-family: "Bebas Neue", sans-serif;
-    text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
     background-size: cover;
@@ -74,7 +74,7 @@ body {
     padding: 10px 7%;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+    z-index: 100;
     align-items:center
 
 }
@@ -194,53 +194,15 @@ header label {
 
 }
 
-/* styling og positionering af billede - har fået hjælp fra chatgpt */ 
-.map {
-    width: 100%; /* Sørger for, at billedet fylder hele bredden af sin container */
-    scale: 50%;
-    margin-bottom: 10px;
-    margin-top: 1%;
-    display: block; /* Sørger for, at billedet ikke har ekstra mellemrum under sig */
-    margin: 0; /* Fjerner margin omkring billedet */
-    padding: 0;
-    position: absolute;
-    top: -20px; 
-    z-index: 1; /* Sørger for, at billedet forsvinder bag headeren+logo*/
-    
+
+
+.svar{
+margin-top: 200px;
+margin-left: 40%;
+font-size: large;
+color: #942f35;
 }
 
-
-
-
-/*styling af flexbox/de 3 rækker med tekst*/
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    gap: 20px;
-    flex-wrap: nowrap; /* Forhindrer linjebrud */
-    margin-top: 48%;
-    color: #292c78;
-
-}
-
-.box{
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-
-
-}
-
-
-.overskrifter{
-    font-size: x-large;
-    text-align: left
-}
-
-.tekster{
-    font-family: "Poppins", sans-serif;
-    text-transform: none;
-
+.paragraph {
+font-size: x-large;
 }

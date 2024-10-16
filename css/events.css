@@ -11,17 +11,25 @@
   }
 
 
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /*styling af header/overskrift-sektion*/
 .titel {
-    padding: 45px;
+    padding: 1px;
     text-align: center;
     background-color: #FFF2CC;
-    position:relative;
+    position:fixed;
   color: #942f35;
   text-decoration: none;
-  font-size: x-large;
-  bottom: 15px;
+  font-size: 30px;
+  bottom: 700px;
+  padding: 30px;
+  width: 100%;
+  z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
 
 }
 
@@ -39,6 +47,7 @@ a{
     position: fixed;
     left: 70px;
     top: 20px;
+    z-index: 1000;
     
 }
 
@@ -65,8 +74,9 @@ body {
     padding: 10px 7%;
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
     align-items:center
+
 
 }
 
@@ -184,3 +194,249 @@ header label {
     }
 
 }
+
+
+/*flexboxes*/
+
+/*styling af container 1 + billede dertil*/
+
+/*Overskrift + tekst */
+
+.container1{
+    width: 100%;
+    margin: 50px;
+    margin-top: 200px;
+}
+
+
+.overskrift1{
+    font-size: xx-large;
+    color: #292c78;
+}
+
+.ikon{
+margin-left: 40%;
+scale: 60%;
+}
+
+
+.tekst1{
+width: 85%;
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+color: #292c78;
+text-transform: none;
+}
+
+
+
+
+
+/*styling af container 2 + billede dertil*/
+/*Open mic */
+
+.container2{
+    display: flex;
+    width: 85%;
+    margin: 50px;
+    
+}
+
+.box1{
+    display: block;
+    color: #292c78;
+}
+
+.overskrift2{
+    font-size: x-large;
+}
+
+.tekst2{
+    width: 80%;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+}
+
+.comedy{
+    border-radius: 20px;
+}
+
+
+
+
+/*styling af container 3 + billede dertil*/
+/*Kunst og kultur */
+
+.container3{
+    display: flex;
+    width: 90%;
+    margin-left: 100px;
+    
+}
+
+.kultur{
+    scale: 80%;
+    margin-left: -50px;
+    border-radius: 25px;
+
+}
+
+
+.box2{
+    display: block;
+    color: #292c78;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+
+
+}
+
+.overskrift3{
+    font-size: x-large;
+}
+
+.tekst3{
+    width: 100%;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+}
+
+
+
+/*styling af container 4 + billede dertil*/
+/*Dokk1 */
+
+.container4{
+    display: flex;
+    width: 85%;
+    margin: 50px;
+    
+}
+
+.box3{
+    display: block;
+    color: #292c78;
+    margin-top: 20px;
+}
+
+.overskrift4{
+    font-size: x-large;
+}
+
+.tekst4{
+    width: 80%;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+}
+
+
+.dokk1{
+    scale: 80%;
+    border-radius: 25px;
+
+}
+
+
+
+/*styling af container 5 + billede dertil*/
+/*Festugen */
+
+.container5{
+    display: flex;
+    width: 90%;
+    margin-left: 100px;
+    
+}
+
+.festuge{
+scale: 70%;
+margin-left: -100px;
+border-radius: 25px;
+}
+
+
+.box4{
+    display: block;
+    color: #292c78;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.overskrift5{
+    font-size: x-large;
+}
+
+.tekst5{
+    width: 100%;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+}
+
+
+/*styling af formular - har fået hjælp fra chatgpt med styling */
+
+/* Styling af formularens baggrund */
+.formular {
+    background-color: #5a674b; /* grøn baggrundsfarve til footeren */
+    color: white; /* Hvid tekst */
+    padding: 20px; /* Indvendig afstand */
+    text-align: center; /* Center justerer teksten */
+  }
+  
+  /* Styling af formularens overskrift */
+  .formular h2 {
+    margin-bottom: 20px; /* Afstand under overskriften */
+    font-size: 24px; /* Større font for overskriften */
+  }
+  
+  /* Styling af formularfelter */
+  .formular form {
+    display: flex;
+    flex-direction: column; /* Stabler formularfelterne vertikalt */
+    align-items: center; /* Centrerer felterne */
+  }
+  
+  /* Styling af labels */
+  .formular label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: left;
+    width: 100%; /* Gør label bredde responsiv */
+    max-width: 300px; /* Maksimal bredde */
+  }
+  
+  /* Styling af input felter */
+  .formular input[type="text"],
+  .formular input[type="email"] {
+    width: 100%; /* Får input til at fylde hele containerens bredde */
+    max-width: 300px; /* Maksimal bredde på inputfelterne */
+    padding: 10px; /* Indvendig afstand */
+    margin-bottom: 15px; /* Afstand mellem felterne */
+    border: 1px solid #ccc; /* Lys grå kant */
+    border-radius: 5px; /* Runde kanter */
+    font-size: 16px;
+  }
+  
+  /* Styling af submit-knappen */
+  .formular input[type="submit"] {
+    background-color: #df6565; /* rød baggrund */
+    color: white; /* Hvid tekst */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer; /* Viser en håndmarkør på knappen */
+    transition: 0.3s ease; /* langsommere farveskift */
+  }
+  
+  /* Effekter ved hover på submit-knappen */
+  .formular input[type="submit"]:hover {
+    background-color: #942f35; /* Mørkere rød ved hover */
+  }

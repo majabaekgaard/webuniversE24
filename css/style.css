@@ -11,18 +11,27 @@
   }
 
 
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+  
 
 /*styling af header/overskrift-sektion*/
 .titel {
-    padding: 45px;
+    padding: 1px;
     text-align: center;
     background-color: #FFF2CC;
-    position:relative;
+    position:fixed;
   color: #942f35;
   text-decoration: none;
-  font-size: x-large;
-  bottom: 15px;
+  font-size: 30px;
+  bottom: 700px;
+  padding: 30px;
+  width: 100%;
 
 }
 
@@ -47,7 +56,6 @@ a{
 
 body {
     font-family: "Bebas Neue", sans-serif;
-    text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
     background-size: cover;
@@ -187,46 +195,63 @@ header label {
 }
 
 
-.tekstfelt1 {
-    position: relative;
-    width: 3000px; /* Bredde på containeren */
-    display: flex
+.maincontainer {
+    display: flex;
+    justify-content: space-between; /* Sørger for mellemrum mellem de to flex-containere */
+    gap: 200px; /* Plads mellem containerne */
+    width: 100%;
 }
+
+/* Flex-container 1 */
+.flexcontainer1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 45%; /* Justerer bredden af containeren */
+}
+
+/* Flex-container 2 */
+.flexcontainer2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%; /* Justerer bredden af containeren */
+    text-align: left;
+}
+
+
+
 .overskrift1 {
     position:fixed;
     top: 200px; /* Placerer teksten 20px fra toppen */
     left: 20px; /* Placerer teksten 20px fra venstre */
     color: #942f35; /* Tekstfarve */
-    font-size: 40px;
+    font-size: 30px;
 }
 
-.overskrift11{
+.overskrift2{
     position:fixed;
     top: 280px; /* Placerer teksten 20px fra toppen */
     left: 20px; /* Placerer teksten 20px fra venstre */
     color: #292c78; /* Tekstfarve */
-    font-size: x-large
+    font-size: x-large;
+
 }
 
 .tekst1{
     position:fixed;
+    font-family: "Poppins", sans-serif;
     top: 310px; /* Placerer teksten 20px fra toppen */
     left: 20px; /* Placerer teksten 20px fra venstre */
     color: #292c78; /* Tekstfarve */
-    font-size: large; 
-    width: 500px;
-
+    font-size: 17px; 
+    max-width: 45%; /*Bestemmer hvor langt ud teksten må gå */
 }
 
 
-.tekstfelt2 {
-    position: relative;
-    width: 3000px; /* Bredde på containeren */
-    display: flex
-}
-.overskrift2 {
+.overskrift3 {
     position:fixed;
-    top: 420px; 
+    top: 432px; 
     left: 20px; 
     color: #292c78; /* Tekstfarve */
     font-size: x-large;
@@ -234,21 +259,80 @@ header label {
 
 .tekst2{
     position:fixed;
-    top: 400px; 
+    font-family: "Poppins", sans-serif;
+    top: 410px; 
     left: 20px; 
     color: #292c78; /* Tekstfarve */
-    font-size: large; 
+    font-size: 17px; 
 }
 
-.tekst22{
+.tekst3{
     position:fixed;
-    top: 450px; 
+    font-family: "Poppins", sans-serif;
+    top: 460px; 
     left: 20px; 
     color: #292c78; /* Tekstfarve */
-    font-size: large; 
-    width: 500px;
+    font-size: 17px; 
+    max-width: 45%;
+}
+
+/*positionering af billedet til venstre*/
+.billedevenstre{
+    position: fixed;
+    scale: 16%;
+    max-width: 10%;
+    top: 15px;
+    left: 20px;
+    bottom: -400px;
+
 }
 
 
+/*positionering af billedet til højre*/
+.billedehøjre{
+    position: fixed;
+    scale: 65%;
+    max-width: 10%;
+    top: 130px;
+    left: 55%;
+}
+
+
+.overskrift4 {
+    position:fixed;
+    top: 530px; /* Placerer teksten 20px fra toppen */
+    left: 47%; /* Placerer teksten 20px fra venstre */
+    color: #292c78; /* Tekstfarve */
+    font-size: x-large;
+}
+
+.tekst4{
+    position:fixed;
+    font-family: "Poppins", sans-serif;
+    top: 560px; /* Placerer teksten 20px fra toppen */
+    left: 47%; /* Placerer teksten 20px fra venstre */
+    color: #292c78; /* Tekstfarve */
+    font-size: 17px; 
+    max-width: 55%; /*Bestemmer hvor langt ud teksten må gå */
+}
+
+.overskrift5{
+    position:fixed;
+    top: 680px; /* Placerer teksten 20px fra toppen */
+    left: 47%; /* Placerer teksten 20px fra venstre */
+    color: #942f35; /* Tekstfarve */
+    font-size: 30px
+
+}
+
+.tekst5{
+    position:fixed;
+    font-family: "Poppins", sans-serif;
+    top: 715px; /* Placerer teksten 20px fra toppen */
+    left: 47%; /* Placerer teksten 20px fra venstre */
+    color: #292c78; /* Tekstfarve */
+    font-size: 17px; 
+    max-width: 50%; /*Bestemmer hvor langt ud teksten må gå */
+}
 
 

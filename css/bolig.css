@@ -10,18 +10,26 @@
     font-style: normal;
   }
 
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
 /*styling af header/overskrift-sektion*/
 .titel {
-    padding: 45px;
+    padding: 1px;
     text-align: center;
     background-color: #FFF2CC;
-    position:relative;
+    position:fixed;
   color: #942f35;
   text-decoration: none;
-  font-size: x-large;
-  bottom: 15px;
+  font-size: 30px;
+  bottom: 700px;
+  padding: 30px;
+  width: 100%;
+  z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
 
 }
 
@@ -39,6 +47,7 @@ a{
     position: fixed;
     left: 70px;
     top: 20px;
+    z-index: 1000; /* Sørger for at logo altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
     
 }
 
@@ -65,7 +74,7 @@ body {
     padding: 10px 7%;
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
     align-items:center
 
 }
@@ -85,9 +94,7 @@ header .navbar ul li {
     position: relative;
     float: left;
     width: 252px;
-    
 
-    
 }
 
 
@@ -182,5 +189,88 @@ header label {
     #menu-bar:checked ~ .navbar {
         display: block;
     }
+
+}
+
+/* styling og positionering af billede - har fået hjælp fra chatgpt */ 
+.bolig {
+    width: 100%; /* Sørger for, at billedet fylder hele bredden af sin container */
+    scale: 50%;
+    margin-bottom: 10px;
+    margin-top: 1%;
+    display: block; /* Sørger for, at billedet ikke har ekstra mellemrum under sig */
+    margin: 0; /* Fjerner margin omkring billedet */
+    padding: 0;
+    position: absolute;
+    top: -20px; 
+    z-index: 1; /* Sørger for, at billedet forsvinder bag headeren+logo+menubar*/
+    
+}
+
+/*introkduktions beskrivelse*/
+.container1{
+    width: 100%;
+    margin: 30px;
+    margin-top: 750px;
+    z-index: 1000;
+}
+
+.overskrift1{
+    font-size: large;
+    color: #292c78;
+    z-index: 1;
+}
+
+.tekst1{
+width: 85%;
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+color: #292c78;
+text-transform: none;
+z-index: 1;
+}
+
+
+/*flexbox - Hvor og Hvad/Hvordan*/
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    gap: 20px;
+    flex-wrap: nowrap; /* Forhindrer linjebrud */
+    margin-top: 20px;
+    color: #292c78;
+    z-index: 1;
+
+}
+
+.box2{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    z-index: 1;
+
+
+}
+
+.overskrifter2{
+    font-size: x-large;
+    text-align: left;
+    z-index: 1;
+}
+
+.overskrifter3{
+    font-size: large;
+    text-align: left;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+
+.tekster2{
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    z-index: 1;
 
 }
