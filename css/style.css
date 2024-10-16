@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*font til overskrifter*/
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -11,7 +12,7 @@
   }
 
 
-  
+   /*font til tekster*/
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -20,7 +21,7 @@
 
   
 
-/*styling af header/overskrift-sektion*/
+/*styling af header/titel*/
 .titel {
     padding: 1px;
     text-align: center;
@@ -32,7 +33,8 @@
   bottom: 700px;
   padding: 30px;
   width: 100%;
-
+  z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
+  cursor: pointer;
 }
 
 /*styling af links*/
@@ -49,21 +51,36 @@ a{
     position: fixed;
     left: 70px;
     top: 20px;
-    
+    z-index: 1000; /* Sørger for at logo altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
 
 
+/* Generelle settings i body*/
 body {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif; /*giver alt denne font, med mindre det ændres*/
+    text-transform: uppercase; /*skriver alt i caps lock, med mindre det ændres*/
     text-decoration: none;
-    min-height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-color:#f8f2e1 ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
 }
 
-/*styling af menubar*/
+/*styling af menubar - kopieret Murats kode - og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/
 .navbar {
     position: fixed;
     top: 120px;
@@ -74,8 +91,9 @@ body {
     padding: 10px 7%;
     display: flex;
     justify-content: center;
-    z-index: 100;
-    align-items:center
+    z-index: 1000;
+    align-items:center;
+    cursor: pointer;
 
 }
 
@@ -94,8 +112,6 @@ header .navbar ul li {
     position: relative;
     float: left;
     width: 252px;
-    
-
     
 }
 
@@ -194,145 +210,102 @@ header label {
 
 }
 
-
-.maincontainer {
+/* Har fået hjælp fra chatGPT - https://chatgpt.com/share/670fd052-92c8-8003-abde-a9cfab113cf2*/
+.container {
     display: flex;
-    justify-content: space-between; /* Sørger for mellemrum mellem de to flex-containere */
-    gap: 200px; /* Plads mellem containerne */
+    justify-content: space-around; /* Placerer rækkerne ved siden af hinanden */
+    gap: 20px;
     width: 100%;
-}
+    max-width: 100%; 
+    margin-top:200px;
+    position:relative;
+    height: auto;
+    min-height: 100vh; /* Sørger for, at containeren fylder hele højden af visningen */
+    overflow-y: auto; /* Tillader lodret scroll, hvis indholdet overstiger højden */
+    flex-wrap: wrap; /* Dette sikrer, at rækkerne vil bryde til næste linje, hvis de ikke kan passe ind */
+    }
 
-/* Flex-container 1 */
-.flexcontainer1 {
+
+
+
+.box1 {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 45%; /* Justerer bredden af containeren */
-}
-
-/* Flex-container 2 */
-.flexcontainer2 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 50%; /* Justerer bredden af containeren */
     text-align: left;
+    width: 45%; /* Juster bredden som ønsket */
+    position:relative;
+    height: auto;
 }
 
 
+.box2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    width: 45%; /* Juster bredden som ønsket */
+    position:relative;
+    height: auto;
+}
 
-.overskrift1 {
-    position:fixed;
-    top: 200px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #942f35; /* Tekstfarve */
-    font-size: 30px;
+.overskrift1{
+    color: #942f35;
+    position:relative;
+    height: auto;
+    font-size: x-large;
 }
 
 .overskrift2{
-    position:fixed;
-    top: 280px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: x-large;
+    top: 30px;
+    color: #292c78;
+    position:relative;
+    height: auto;
+    font-size:medium
 
 }
 
-.tekst1{
-    position:fixed;
+.tekster {
     font-family: "Poppins", sans-serif;
-    top: 310px; /* Placerer teksten 20px fra toppen */
-    left: 20px; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: 17px; 
-    max-width: 45%; /*Bestemmer hvor langt ud teksten må gå */
+    text-transform: none;
+    text-align: left;
+    position:relative;
+    height: auto;
+    top: 30px;
+    padding-bottom: 40px;
+    color: #292c78;
+}
+
+.venstrebillede {
+    max-width: 100%;
+    scale: 80%;
+    height: auto;
+    position:relative;
+}
+
+.højrebillede {
+    max-width: 100%;
+    height: auto;
+    position:relative;
+    scale: 80%;
 }
 
 
-.overskrift3 {
-    position:fixed;
-    top: 432px; 
-    left: 20px; 
-    color: #292c78; /* Tekstfarve */
-    font-size: x-large;
-}
-
-.tekst2{
-    position:fixed;
-    font-family: "Poppins", sans-serif;
-    top: 410px; 
-    left: 20px; 
-    color: #292c78; /* Tekstfarve */
-    font-size: 17px; 
-}
-
-.tekst3{
-    position:fixed;
-    font-family: "Poppins", sans-serif;
-    top: 460px; 
-    left: 20px; 
-    color: #292c78; /* Tekstfarve */
-    font-size: 17px; 
-    max-width: 45%;
-}
-
-/*positionering af billedet til venstre*/
-.billedevenstre{
-    position: fixed;
-    scale: 16%;
-    max-width: 10%;
-    top: 15px;
-    left: 20px;
-    bottom: -400px;
+/*Har fået hjælp fra chatGPT, og tilpasset mit univers: https://chatgpt.com/share/6710049e-b07c-8003-9a76-78ea8a121201*/
+footer {
+    margin-top: auto;
+    background-color: #5a674b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position:relative;
+    bottom: 0;
+    left:0; 
+    width: 100%
 
 }
-
-
-/*positionering af billedet til højre*/
-.billedehøjre{
-    position: fixed;
-    scale: 65%;
-    max-width: 10%;
-    top: 130px;
-    left: 55%;
-}
-
-
-.overskrift4 {
-    position:fixed;
-    top: 530px; /* Placerer teksten 20px fra toppen */
-    left: 47%; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: x-large;
-}
-
-.tekst4{
-    position:fixed;
-    font-family: "Poppins", sans-serif;
-    top: 560px; /* Placerer teksten 20px fra toppen */
-    left: 47%; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: 17px; 
-    max-width: 55%; /*Bestemmer hvor langt ud teksten må gå */
-}
-
-.overskrift5{
-    position:fixed;
-    top: 680px; /* Placerer teksten 20px fra toppen */
-    left: 47%; /* Placerer teksten 20px fra venstre */
-    color: #942f35; /* Tekstfarve */
-    font-size: 30px
-
-}
-
-.tekst5{
-    position:fixed;
-    font-family: "Poppins", sans-serif;
-    top: 715px; /* Placerer teksten 20px fra toppen */
-    left: 47%; /* Placerer teksten 20px fra venstre */
-    color: #292c78; /* Tekstfarve */
-    font-size: 17px; 
-    max-width: 50%; /*Bestemmer hvor langt ud teksten må gå */
-}
-
-
+    
+    
+    footer p {
+        margin: 0;
+        padding: 5px 0;
+        width: 100%
+    }

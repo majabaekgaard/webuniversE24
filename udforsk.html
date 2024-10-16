@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Udforsk byen</title>
     <link rel="stylesheet" href="css/udforsk.css">
 
-    <!-- font på overskrifter -->
+    <!-- font på overskrifter - fundet på google fonts - https://fonts.google.com/selection -->
     <style> 
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
         
-    <!-- font på tekster -->
+    <!-- font på tekster - fundet på google fonts - https://fonts.google.com/selection -->
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
          </style>
@@ -26,14 +26,14 @@
             <h1><a href="index.html">TILFLYTTER AARHUS</a></h1>
         </div>
 
-        <!-- Indsæt logo i venstre hjørne, fungerer som link der fører til forsiden -->
+        <!-- Indsættelse af logo, fungerer som link der fører til forsiden -->
             <div class="logoheader">
                  <a href="index.html">
                 <img src="/images/logo.png" alt="Logo" class="logoheader">
                 </a>
             </div>
 
-            <!-- opsætning af menubar - har brugt Murats kode fra github -->
+        <!-- opsætning af menubar - har brugt Murats kode fra github og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/ -->
             <div class="navbar">
             <a href="" class="logo"></a>
             <input type="checkbox" id="menu-bar">
@@ -41,7 +41,7 @@
     
             
                 <ul>
-                    <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup-->
+                <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup - Fik hjælp fra chatGPT: https://chatgpt.com/share/670fcd52-1f80-8003-b3f2-b6c158152eb3--> 
                     <li><a href="udforsk.html"><i>UDFORSK</i></a>
                     <ul>
                         <li><a href="udforsk.html">Lær' Aarhus at kende</a></li>
@@ -84,6 +84,7 @@
                                     <li><a href="#">Brokvarteret</a></li>
                                     <li><a href="#">Frederiksbjerg</a></li>
                                     <li><a href="#">Viby/Åbyhøj/Risskov</a></li>
+                                    <li><a href="#">Aarhus V/N</a></li>
                                 </ul>
 
                             </li>
@@ -115,8 +116,14 @@
 
         <main>
 
-            <img src="/images/billedeudforsk.jpg" alt="udforskbyen" class="map">
 
+            <div class="overskrift1">
+            <h1>Udforsk Aarhus</h1>
+            </div>
+
+            <img src="/images/billedeudforsk.jpg" alt="udforskbyen" class="map">  <!--Har taget et screenshot fra google maps, og indsat ikoner på-->
+
+        <!-- flexbox -->
         <div class="container">
 
             <div class="box">
@@ -125,7 +132,7 @@
                 </div>
             
                 <div class="tekster">
-                Aarhus byder også på flere centrale steder, som er gode at kende for nye studerende. <br> <br> Aarhus Hovedbanegård er knudepunktet for både tog og busser, og derfra er det let at navigere rundt i byen.<br> <br> Skal du have styr på papirer og folkeregister, finder du Borgerservice på Dokk1 ved havnen. <br> <br> Aarhus Universitetshospital i Skejby ligger i den nordlige del af byen og er vigtigt at vide, hvis du nogensinde har brug for lægehjælp. <br> <br> Læs mere <a href="#">her</a>
+                <p>Aarhus byder også på flere centrale steder, som er gode at kende for nye studerende.</p> <br> <p>Aarhus Hovedbanegård er knudepunktet for både tog og busser, og derfra er det let at navigere rundt i byen. Skal du f.eks. tage offentlig transport til arbejde eller studie, så hovedbanegården et godt udgangspunkt.</p> <br> <p>Skal du have styr på papirer og folkeregister, finder du Borgerservice på Dokk1 ved havnen. </p> <br> <p>Aarhus Universitetshospital i Skejby ligger i den nordlige del af byen og er vigtigt at vide, hvis du nogensinde har brug for lægehjælp.</p> <br> <p>Læs mere <a href="#">her</a> </p>
                 </div>
             
             </div>
@@ -137,9 +144,9 @@
                 </div>
 
                 <div class="tekster">
-                Aarhus er også en by rig på kultur og kunst. <br> Et must-see er ARoS Aarhus Kunstmuseum, hvor du kan opleve imponerende kunstudstillinger og den berømte regnbuepanorama, der giver dig en fantastisk udsigt over byen. <br> <br>
-                En anden vigtig kulturel institution er Den Gamle By, et frilandsmuseum, der giver dig indblik i dansk historie og kultur fra middelalderen til i dag. Her kan du opleve gamle bygninger, butikker og aktiviteter, der bringer historien til live.<br> <br>
-                For teater- og musikentusiaster er Aarhus Teater og Musikhuset Aarhus centrale steder at kende, da de tilbyder et væld af forestillinger, koncerter og kulturelle arrangementer året rundt. <br> <br> Læs mere om byens kultur muligheder <a href="#">her</a>
+                <p>Aarhus er også en by rig på kunst og kultur. </p> <br> <p>Et must-see er ARoS Aarhus Kunstmuseum, hvor du kan opleve imponerende kunstudstillinger og den berømte regnbuepanorama, der giver dig en fantastisk udsigt over byen.</p> <br> 
+                <p>En anden vigtig kulturel institution er Den Gamle By, et frilandsmuseum, der giver dig indblik i dansk historie og kultur fra middelalderen til i dag. Her kan du opleve gamle bygninger, butikker og aktiviteter, der bringer historien til live.</p> <br>
+                <p>For teater- og musikentusiaster er Aarhus Teater og Musikhuset Aarhus centrale steder at kende, da de tilbyder et væld af forestillinger, koncerter og kulturelle arrangementer året rundt.</p> <br> <p>Læs mere om byens kultur muligheder <a href="#">her</a> </p>
                 </div>
             
             </div>
@@ -151,7 +158,7 @@
                 </div>
 
                 <div class="tekster">
-                Når det kommer til mad, har Aarhus masser at tilbyde - især for studerende! <br> <br>Byen bugner af spisesteder til studerende, hvor du kan nyde lækker mad uden at sprænge budgettet. Hvis du søger en hyggelig café til en studiegruppe eller bare et billigt sted at spise med dine venner, er Aarhus fuld af muligheder. <br> <br> For store grupper kan du tjekke spisesteder til mange mennesker, som Aarhus Street Food, hvor der er plads til alle, og hvor priserne er su-venlige. <br><br> Læs mere om byens gode spisesteder <a href="#">her</a>
+                <p>Når det kommer til mad, har Aarhus masser at tilbyde - især for studerende!  </p> <br> <p> Byen bugner af spisesteder til studerende, hvor du kan nyde lækker mad uden at sprænge budgettet. Hvis du søger en hyggelig café til en studiegruppe eller bare et billigt sted at spise med dine venner, er Aarhus fuld af muligheder. </p> <br> <p>For store grupper kan du tjekke spisesteder til mange mennesker, som Aarhus Street Food, hvor der er plads til alle, og hvor priserne er su-venlige.</p> <br> <p>Læs mere om byens gode spisesteder <a href="#">her</a> </p>
                 </div>  
 
 
@@ -161,6 +168,13 @@
 
         </main>
 
+       <!--Har fået hjælp fra chatGPT, og tilpasset mit univers: https://chatgpt.com/share/6710049e-b07c-8003-9a76-78ea8a121201-->
+       
+       <footer>
+        <p>&copy; 2024 Tilflytter Aarhus. Alle rettigheder forbeholdes.</p>
+        <p>Email: info@tilflytteraarhus.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        </footer>
        
 </body>
     </html>

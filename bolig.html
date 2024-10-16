@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolig</title>
     <link rel="stylesheet" href="css/bolig.css">
 
-    <!-- font på overskrift -->    
+    <!-- font på overskrift - fundet på google fonts - https://fonts.google.com/selection -->  
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
         
 
-    <!-- font på tekster -->
+    <!-- font på tekster - fundet på google fonts - https://fonts.google.com/selection -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style> 
@@ -27,14 +27,14 @@
             <h1><a href="index.html">TILFLYTTER AARHUS</a></h1>
         </div>
 
-        <!-- Indsæt logo i venstre hjørne, fungerer som link der fører til forsiden -->
+        <!-- Indsættelse af logo, fungerer som link der fører til forsiden -->
             <div class="logoheader">
                  <a href="index.html">
                 <img src="/images/logo.png" alt="Logo" class="logoheader">
                 </a>
             </div>
 
-            <!-- opsætning af menubar - har brugt Murats kode fra github -->
+        <!-- opsætning af menubar - har brugt Murats kode fra github og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/ -->
             <div class="navbar">
             <a href="" class="logo"></a>
             <input type="checkbox" id="menu-bar">
@@ -42,7 +42,7 @@
     
             
                 <ul>
-                    <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup-->
+                <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup - Fik hjælp fra chatGPT: https://chatgpt.com/share/670fcd52-1f80-8003-b3f2-b6c158152eb3--> 
                     <li><a href="udforsk.html"><i>UDFORSK</i></a>
                     <ul>
                         <li><a href="udforsk.html">Lær' Aarhus at kende</a></li>
@@ -85,6 +85,7 @@
                                     <li><a href="#">Brokvarteret</a></li>
                                     <li><a href="#">Frederiksbjerg</a></li>
                                     <li><a href="#">Viby/Åbyhøj/Risskov</a></li>
+                                    <li><a href="#">Aarhus V/N</a></li>
                                 </ul>
 
                             </li>
@@ -116,11 +117,11 @@
 
         <main>
 
-            <main>
+            
 
-                <img src="/images/boligmap.jpg" alt="boligmap" class="bolig">
+                <img src="/images/boligmap.jpg" alt="boligmap" class="bolig">  <!--Har taget et screenshot fra google maps, og farvelagt nogle af kvartererne i photoshop-->
     
-
+            <!--flexboxes-->
                 <div class="container1">
 
                     <div class="overskrift1">
@@ -147,7 +148,7 @@
                     
 
                     <div class="tekster2">
-                        <p> Aarhus har mange spændende bydele, som hver især har noget særligt at byde på. Uanset om du vil bo midt i byens pulserende liv eller lidt mere tilbagetrukket i en roligere forstad, er der masser af muligheder.</p>
+                        <p>Aarhus har mange spændende bydele, som hver især har noget særligt at byde på. Uanset om du vil bo midt i byens pulserende liv eller lidt mere tilbagetrukket i en roligere forstad, er der masser af muligheder.</p>
                         <br> <p><strong>Aarhus Ø:</strong> Hvis du elsker moderne arkitektur og vil bo tæt på vandet, er Aarhus Ø noget for dig. Her finder du nye lejligheder med fantastisk udsigt, men prisen kan være lidt højere. <br> Læs mere om kvarteret <a href="#">her</a></p>
                         <br><p><strong>Trøjborg:</strong> Et populært valg for studerende. Trøjborg har sin egen lille "by i byen"-stemning, med caféer, biografer og tæt på både Riis Skov og universitetet. <br> Læs mere om kvarteret <a href="#">her</a></p>
                         <br><p><strong>Latinerkvarteret + Øgadekvarteret:</strong> Midt i Aarhus finder du alt, hvad byen har at byde på. Latinerkvarteret er fyldt med charme og gamle bygninger, mens Øgadekvarteret tilbyder klassiske bylejligheder tæt på alt. <br> Læs mere om kvarteret <a href="#">her</a></p>
@@ -170,6 +171,11 @@
                         <br><p><strong>Aarhus V og Aarhus N:</strong> Disse områder byder ofte på billigere boliger og nybyggeri. Der er gode transportmuligheder, så du kan hurtigt komme til centrum, selvom du bor lidt udenfor.</p>
                         <br><p> Læs mere om gode områder uden for centrum <a href="#">her</a></p>
                     </div>
+
+
+                    <img src="/images/ikonbolig.png" alt="ikon" class="ikon">
+
+
                 </div>
                 
                 <div class="box2">
@@ -180,9 +186,9 @@
                 
     
                     <div class="tekster2">
-                        <p>Der er findes mange forskellige bo-former, og det kan være svært at vide, hvilken man bedst synes om. Derfor har vi samlet et lille overblik til dig her</p> 
+                        <p>Der er findes mange forskellige bo-former, og det kan være svært at vide på forhånd, hvilken man bedst synes om. Derfor har vi samlet et lille overblik til dig her</p> 
                         <br><p><strong>En ungdomsbolig: kun for studerende </strong> er en boligtype designet til unge under uddannelse, typisk billigere end almindelige lejligheder og ofte beliggende tæt på universiteter og skoler.</p> <br> <p>Hvis du undrer dig over hvem der kan søge en ungdomsbolig, er svaret enkelt: Alle, der er tilmeldt en uddannelse, kan søge. Det betyder, at studerende på videregående uddannelser, gymnasier eller erhvervsuddannelser kan ansøge om en ungdomsbolig.</p>
-                        <br><p><strong>Kollektiv: Bo sammen med andre</strong> I et kollektiv deler du en bolig med flere beboere. I har typisk har hver jeres værelse, men deler fælles faciliteter som køkken og badeværelse. Kollektiver findes i hele Aarhus, især i områder som Trøjborg og Frederiksbjerg, der er kendt for deres studiemiljøer.
+                        <br><p><strong>Kollektiv: Bo sammen med andre</strong> I et kollektiv deler du en bolig med flere beboere. I har typisk hver jeres værelse, men deler fælles faciliteter som køkken og badeværelse. Kollektiver findes i hele Aarhus, især i områder som Trøjborg og Frederiksbjerg.
                         Kollektiver er også en økonomisk fordel, da man ofte kan bo billigere. Hvis du flytter til Aarhus og gerne vil opbygge et socialt netværk hurtigt, kan et kollektiv være en god løsning.</p>
                         <br><p><strong>Kollegieværelse: Et billigt valg for studerende</strong>
                         En anden mulighed for studerende er at søge et kollegieværelse. Dette ligner på mange måder en ungdomsbolig, men kollegierne har ofte et stærkt socialt fællesskab, hvor der arrangeres fællesaktiviteter, fester og andre sociale events. Aarhus har flere kollegier spredt ud over byen, både tæt på centrum og i udkanten.</p>
@@ -191,9 +197,9 @@
                         
                     </div>
 
+                    <img src="/images/ikonbolig2.png" alt="ikon2" class="ikon2">
 
-
-                    <div class="overskrifter3">
+                    <div class="overskrifter2">
                         <h2><i>Hvordan</i></h2>
                     </div>
                 
@@ -203,17 +209,17 @@
                         
                         <br><p><strong>Ungdomsbolig:</strong>Hvis du skal søge en ungdomsbolig, er det vigtigt at starte tidligt. Mange boliger tildeles efter venteliste, og der er ofte stor efterspørgsel i populære områder. Du kan registrere dig på boligportaler som <a href="https://ungdomsboligaarhus.dk/">UngdomsboligAarhus</a> hvor du kan oprette en profil og vælge de boliger, du vil ansøge om.</p>
                         
-                        <br><p><strong>Kollegiekontoret i Aarhus</strong> er det oplagte sted at starte, hvis du søger en kollegiebolig eller ungdomsbolig i Aarhus.</p>
-                         <br> <p> <strong>Findroommate </strong> er en platform, der specialiserer sig i delte boliger og værelser til leje. Hvis du gerne vil bo i kollektiv eller dele en lejlighed med en eller flere roommates, er det her en oplagt platform.</p>
+                        <br><p><strong>Kollegiekontoret i Aarhus</strong> er det oplagte sted at starte, hvis du søger en kollegiebolig eller ungdomsbolig i Aarhus. Læs mere <a href="https://kollegiekontoret.dk/">her</a></p>
+                         <br> <p> <strong>Findroommate.dk</strong> er en platform, der specialiserer sig i delte boliger og værelser til leje. Hvis du gerne vil bo i kollektiv eller dele en lejlighed med en eller flere roommates, er <a href="https://www.findroommate.dk/">Findroommate</a> en oplagt platform.</p>
             
                         
-                        <br><p><strong> Boligportaler:</strong> Der findes en række private boligportaler, hvor du kan søge efter lejligheder, værelser eller kollektiver til leje. Disse portaler fungerer som samlingssteder for udlejere, som ofte tilbyder både kort- og langtidslejemål. Nogle af de mest populære platforme i Aarhus er:
-                        BoligPortal, Lejebolig.dk, Aarhusbolig.dk</p>
+                        <br><p><strong> Boligportaler:</strong> Der findes en række private boligportaler, hvor du kan søge efter lejligheder, værelser eller kollektiver til leje. Disse portaler fungerer som samlingssteder for udlejere, som ofte tilbyder både kort- og langtidslejemål. Nogle af de mest populære platforme i Aarhus er:</p>
+                            <p> <a href="https://www.boligportal.dk/">Boligportal.dk </a> - <a href="https://www.lejebolig.dk/">Lejebolig.dk</a> - <a href="https://aarhusbolig.dk/">Aarhusbolig.dk</a></p>
                         
-                        <br><p><strong>Facebook-grupper:</strong>Facebook er blevet en populær platform for både udlejere og boligsøgende. Her kan du finde både værelser, lejligheder, ungdomsboliger og kollektiver til leje, ofte med hurtigere svartid end på traditionelle boligportaler. Populære grupper er:</p>
-                        <br><p>Lejligheder og værelser til leje i Aarhus</p>
-                        <br><p>Bolig i Aarhus</p>
-                        <br><p>Studiebolig i Aarhus</p>
+                        <br><p><strong>Facebook-grupper:</strong> Facebook er blevet en populær platform for både udlejere og boligsøgende. Her kan du finde både værelser, lejligheder, ungdomsboliger og kollektiver til leje, ofte med hurtigere svartid end på traditionelle boligportaler. Her er 3 bud på nogle populære grupper:</p>
+                        <br><p><a href="https://www.facebook.com/groups/LejeboligerAarhus/">Lejligheder og værelser til leje i Aarhus</a></p>
+                        <p> <a href="https://www.facebook.com/groups/27307379871/">Bolig i Aarhus</a></p>
+                        <p> <a href="https://www.facebook.com/groups/1115129335667061/">Ledige lejeboliger i Aarhus</a></p>
                     
                     </div>
 
@@ -222,6 +228,14 @@
             </div>
         </main>
 
+       
+       <!--Har fået hjælp fra chatGPT, og tilpasset mit univers: https://chatgpt.com/share/6710049e-b07c-8003-9a76-78ea8a121201-->
+       <footer>
+        <p>&copy; 2024 Tilflytter Aarhus. Alle rettigheder forbeholdes.</p>
+        <p>Email: info@tilflytteraarhus.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        </footer>
+       
        
 </body>
     </html>

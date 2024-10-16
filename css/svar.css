@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*font til overskrift*/
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -11,7 +12,7 @@
   }
 
 
-  
+   /*font til tekster*/
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -20,7 +21,7 @@
 
   
 
-/*styling af header/overskrift-sektion*/
+/*styling af header/titel*/
 .titel {
     padding: 1px;
     text-align: center;
@@ -53,17 +54,18 @@ a{
 }
 
 
-
+/* Generelle settings i body*/
 body {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif; /*giver alt denne font, med mindre det ændres*/
+    text-transform: uppercase; /*skriver alt i caps lock, med mindre det ændres*/
     text-decoration: none;
-    min-height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-color:#f8f2e1 ;
 }
 
-/*styling af menubar*/
+/*styling af menubar - kopieret Murats kode - og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/
 .navbar {
     position: fixed;
     top: 120px;
@@ -99,7 +101,6 @@ header .navbar ul li {
     
 }
 
-
 header .navbar ul li a {
     text-decoration: none;
     font-size: 30px;
@@ -126,7 +127,6 @@ header .navbar ul li ul li {
     width: 100%;
     border-top: 0.5px solid
 }
-
 
 header .navbar ul li ul li ul {
     left: 250px;
@@ -203,6 +203,3 @@ font-size: large;
 color: #942f35;
 }
 
-.paragraph {
-font-size: x-large;
-}

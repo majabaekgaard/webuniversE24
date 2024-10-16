@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+/*font til overskrift*/
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
+  /*font til tekster*/
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -17,7 +20,7 @@
   }
 
 
-/*styling af header/overskrift-sektion*/
+/*styling af header/titel*/
 .titel {
     padding: 1px;
     text-align: center;
@@ -30,6 +33,7 @@
   padding: 30px;
   width: 100%;
   z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
+  cursor: pointer;
 
 }
 
@@ -48,22 +52,23 @@ a{
     left: 70px;
     top: 20px;
     z-index: 1000; /* Sørger for at logo altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
-    
+    cursor: pointer;
 }
 
 
-
+/* Generelle settings i body*/
 body {
-    font-family: "Bebas Neue", sans-serif;
-    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif; /*giver alt denne font, med mindre det ændres*/
+    text-transform: uppercase; /*skriver alt i caps lock, med mindre det ændres*/
     text-decoration: none;
-    min-height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-color:#f8f2e1 ;
+    cursor: pointer;
 }
 
-/*styling af menubar*/
+/*styling af menubar - kopieret Murats kode - og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/
 .navbar {
     position: fixed;
     top: 120px;
@@ -75,8 +80,8 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1000;
-    align-items:center
-
+    align-items:center;
+    cursor: pointer;
 }
 
 header .logo {
@@ -98,7 +103,6 @@ header .navbar ul li {
 
     
 }
-
 
 header .navbar ul li a {
     text-decoration: none;
@@ -194,17 +198,26 @@ header label {
 
 }
 
+/* positionering af overskrift */
+.overskrift1{
+    margin-top: 200px;
+    margin-left: 600px;
+    font-size: x-large;
+    color: #292c78;
+
+}
+
+
+
 /* styling og positionering af billede - har fået hjælp fra chatgpt */ 
 .map {
     width: 100%; /* Sørger for, at billedet fylder hele bredden af sin container */
     scale: 50%;
     margin-bottom: 10px;
-    margin-top: 1%;
     display: block; /* Sørger for, at billedet ikke har ekstra mellemrum under sig */
     margin: 0; /* Fjerner margin omkring billedet */
-    padding: 0;
     position: absolute;
-    top: -20px; 
+    top: 30px; 
     z-index: 1; /* Sørger for, at billedet forsvinder bag headeren+logo*/
     
 }
@@ -217,11 +230,12 @@ header label {
 .container{
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     gap: 20px;
-    flex-wrap: nowrap; /* Forhindrer linjebrud */
-    margin-top: 48%;
+    flex-wrap: nowrap; 
+    margin-top: 35%;
     color: #292c78;
+    width: 100%;
 
 }
 
@@ -229,18 +243,41 @@ header label {
     flex: 1;
     padding: 20px;
     text-align: left;
-
+margin-left: 10px;
 
 }
 
-
+/*generellse settings for overskrifter*/
 .overskrifter{
     font-size: x-large;
     text-align: left
 }
 
+/*generellse settings for teksten*/
 .tekster{
     font-family: "Poppins", sans-serif;
     text-transform: none;
+    width: 90%;
 
 }
+
+/*Har fået hjælp fra chatGPT, og tilpasset mit univers: https://chatgpt.com/share/6710049e-b07c-8003-9a76-78ea8a121201*/
+footer {
+    margin-top: auto;
+    background-color: #5a674b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position:relative;
+    bottom: 0;
+    left:0; 
+    width: 100%
+
+}
+    
+    
+    footer p {
+        margin: 0;
+        padding: 5px 0;
+        width: 100%
+    }

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*font til overskrift*/
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -11,13 +11,14 @@
   }
 
 
+ /*font til tekster*/
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
-/*styling af header/overskrift-sektion*/
+/*styling af header/titel*/
 .titel {
     padding: 1px;
     text-align: center;
@@ -30,7 +31,7 @@
   padding: 30px;
   width: 100%;
   z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
-
+  cursor: pointer;
 }
 
 /*styling af links*/
@@ -48,22 +49,24 @@ a{
     left: 70px;
     top: 20px;
     z-index: 1000;
+    cursor: pointer;
     
 }
 
 
-
+/* Generelle settings i body*/
 body {
-    font-family: "Bebas Neue", sans-serif;
-    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif; /*giver alt denne font, med mindre det ændres*/
+    text-transform: uppercase; /*skriver alt i caps lock, med mindre det ændres*/
     text-decoration: none;
-    min-height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-color:#f8f2e1 ;
+    cursor: pointer;
 }
 
-/*styling af menubar*/
+/*styling af menubar - kopieret Murats kode - og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/
 .navbar {
     position: fixed;
     top: 120px;
@@ -75,8 +78,8 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1000;
-    align-items:center
-
+    align-items:center;
+    cursor: pointer;
 
 }
 
@@ -198,9 +201,8 @@ header label {
 
 /*flexboxes*/
 
-/*styling af container 1 + billede dertil*/
-
-/*Overskrift + tekst */
+/*styling af container 1 + ikon dertil*/
+/*overskrift + ikon + introduktion  */
 
 .container1{
     width: 100%;
@@ -208,18 +210,18 @@ header label {
     margin-top: 200px;
 }
 
+.ikon{
+    margin-left: 40%;
+    scale: 60%;
+    }
 
+/*styling af overskrift i class "overskrift1*/
 .overskrift1{
     font-size: xx-large;
     color: #292c78;
 }
 
-.ikon{
-margin-left: 40%;
-scale: 60%;
-}
-
-
+/*styling af tekst i class "tekst1*/
 .tekst1{
 width: 85%;
 font-family: "Poppins", sans-serif;
@@ -247,10 +249,12 @@ text-transform: none;
     color: #292c78;
 }
 
+/*styling af overskrift i class "overskrift2*/
 .overskrift2{
     font-size: x-large;
 }
 
+/*styling af tekst i class "tekst2*/
 .tekst2{
     width: 80%;
     font-size: 17px;
@@ -293,12 +297,15 @@ text-transform: none;
 
 }
 
+/*styling af overskrift i class "overskrift3*/
 .overskrift3{
     font-size: x-large;
 }
 
+
+/*styling af tekst i class "tekst3*/
 .tekst3{
-    width: 100%;
+    width: 90%;
     font-size: 17px;
     font-family: "Poppins", sans-serif;
     text-transform: none;
@@ -322,12 +329,14 @@ text-transform: none;
     margin-top: 20px;
 }
 
+/*styling af overskrift i class "overskrift4*/
 .overskrift4{
     font-size: x-large;
 }
 
+/*styling af tekst i class "tekst4*/
 .tekst4{
-    width: 80%;
+    width: 90%;
     font-size: 17px;
     font-family: "Poppins", sans-serif;
     text-transform: none;
@@ -367,10 +376,12 @@ border-radius: 25px;
 
 }
 
+/*styling af overskrift i class "overskrift5*/
 .overskrift5{
     font-size: x-large;
 }
 
+/*styling af tekst i class "tekst5*/
 .tekst5{
     width: 100%;
     font-size: 17px;
@@ -379,11 +390,11 @@ border-radius: 25px;
 }
 
 
-/*styling af formular - har fået hjælp fra chatgpt med styling */
+/*styling af formular - har fået hjælp fra chatgpt med styling - derefter tilpasset mit univers - https://chatgpt.com/share/670fda4b-b2cc-8003-be87-cbdda4f98b7f*/
 
 /* Styling af formularens baggrund */
 .formular {
-    background-color: #5a674b; /* grøn baggrundsfarve til footeren */
+    background-color: #7e8a6f; /* grøn baggrundsfarve til footeren */
     color: white; /* Hvid tekst */
     padding: 20px; /* Indvendig afstand */
     text-align: center; /* Center justerer teksten */
@@ -440,3 +451,7 @@ border-radius: 25px;
   .formular input[type="submit"]:hover {
     background-color: #942f35; /* Mørkere rød ved hover */
   }
+
+
+
+

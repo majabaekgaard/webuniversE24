@@ -6,14 +6,14 @@
     <title>Tilflytter Aarhus - forside</title>
     <link rel="stylesheet" href="css/style.css">
 
-        <!-- font på overskrifter -->
+        <!-- font på overskrifter - fundet på google fonts - https://fonts.google.com/selection-->
          <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
         
 
                 
-        <!-- font på tekster -->
+        <!-- font på tekster - fundet på google fonts - https://fonts.google.com/selection -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
@@ -29,14 +29,14 @@
             <h1><a href="index.html">TILFLYTTER AARHUS</a></h1>
         </div>
 
-        <!-- Indsæt logo i venstre hjørne, fungerer som link der fører til forsiden -->
+        <!-- Indsættelse af logo, fungerer som link der fører til forsiden -->
             <div class="logoheader">
                  <a href="index.html">
                 <img src="/images/logo.png" alt="Logo" class="logoheader">
                 </a>
             </div>
 
-            <!-- opsætning af menubar - har brugt Murats kode fra github -->
+        <!-- opsætning af menubar - har brugt Murats kode fra github og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/ -->
             <div class="navbar">
             <a href="" class="logo"></a>
             <input type="checkbox" id="menu-bar">
@@ -44,7 +44,7 @@
     
             
                 <ul>
-                    <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup-->
+                <!-- Bruger <i> til at gøre overskrifterne kursiv, som i mockup - Fik hjælp fra chatGPT: https://chatgpt.com/share/670fcd52-1f80-8003-b3f2-b6c158152eb3--> 
                     <li><a href="udforsk.html"><i>UDFORSK</i></a>
                     <ul>
                         <li><a href="udforsk.html">Lær' Aarhus at kende</a></li>
@@ -88,6 +88,7 @@
                                     <li><a href="#">Brokvarteret</a></li>
                                     <li><a href="#">Frederiksbjerg</a></li>
                                     <li><a href="#">Viby/Åbyhøj/Risskov</a></li>
+                                    <li><a href="#">Aarhus V/N</a></li>
                                 </ul>
 
                             </li>
@@ -120,76 +121,74 @@
        
      <main>
 
-        <div class="maincontainer">
-
-            <div class="flexcontainer1">
-           
-                <div class="overskrift1">
-                    <h2>Velkommen til din tilflytter guide</h2>
-                </div>
-
-                <div class="overskrift2">
-                    <h3><i>Skal du flytte til Aarhus og begynde på studie?</i></h3>
-                </div>
-
-                <div class="tekst1">
-                    <p>At flytte hjemmefra som ung kan være både spændende og udfordrende. Hvis du føler dig fortabt i en ny by, er du ikke alene! Derfor har vi samlet en masse fantastiske informationer, så du kan komme godt fra start.</p>
-                </div>
-
-                
-                <div class="tekst2"> 
-                    <p>Aarhus er en by med masser af liv og muligheder</p>
-                </div>
-                   
-                <div class="overskrift3">
-                    <h3><i>Men hvor starter man, når man skal flytte hjemmefra for første gang?</i></h3>
-                </div>
-
-                <div class="tekst3">
-                    <p>I magasinet her, har vi sørget for, at du bliver klogere på byens kvarterer, samt får et overblik over hvilke platforme du kan bruge når du skal søge bolig</p>
-                </div>
-
-                <div class="billedevenstre">
-
-                    <img src="/images/forsidevenstre.jpg" alt="billedefrafestuge">
+        <!-- flexboxes - har taget udgangspunkt i hjælp fra chatGPT - https://chatgpt.com/share/670fd052-92c8-8003-abde-a9cfab113cf2-->
         
-                </div>
-    
-            </div>  
-           
+<div class="container">
+
+    <div class="box1">
+        <div class="overskrift1">
+            <h1>Velkommen til din tilflytter guide</h1>
+        </div>
+
+        <div class="overskrift2">
+            <h2><i>Skal du flytte til aarhus og begynde på studie?</i></h2>
+        </div>
+
+        <div class="tekster">
+            <p>At flytte hjemmefra som ung kan være både spændende og udfordrende. Især hvis man også skal flytte for første gang. Hvis du føler dig fortabt i en ny by, er du ikke alene! Derfor har vi samlet en masse fantastiske informationer, så du kan komme godt fra start. </p>
+        </div>
+
+        <div class="overskrift2">
+            <h2><i>Men hvor skal man starte, når man skal flytte hjemmefra for første gang?</i></h2>
         </div>
 
 
-        <div class="flexcontainer2">
-
-            <div class="billedehøjre">
-                <img src="/images/forsidehøjre.jpeg" alt="billedefraaaen">
-            </div>
-
-            <div class="overskrift4">
-                <h3><i>Her kan du få den information, du behøver, for at føle dig hjemme i Aarhus</i></h3>
-            </div>
-
-            <div class="tekst4">
-                <p>Opdag spændende arrangementer og events, udforsk byens mange muligheder og skab nye venskaber med medstuderende, mens du lærer byen at kende. Vi giver dig de ressourcer du skal bruge, for at kunne balance mellem studie og fritid</p>
-            </div>
-
-            <div class="overskrift5">
-                <h3><i>Dyk ned i vores magasin og bliv klogere!</i></h3>
-            </div>
-        
-
-            <div class="tekst5">
-                <p>Her finder du alt, hvad du har brug for: tips til boligsøgningen, viden om studierabatter, oversigt over byens muligheder, samt en kalender med lokale events. Gør dig klar til at tage del i Aarhus' liv og kultur — dit nye hjem venter på dig!</p>
-            </div>
-    
-    
+        <div class="tekster">
+            <p> Aarhus er en by med masser af liv og muligheder. I magasinet her, har vi sørget for, at du bliver klogere på byens kvarterer, samt får et overblik over hvilke platforme du kan bruge når du skal søge bolig. </p>
         </div>
 
+
+        <img src="/images/forsidevenstre.jpg" alt="forsidebillede1" class="venstrebillede">
     </div>
 
-        </main>
 
+    <div class="box2">
+        
+        <img src="/images/forsidehøjre.jpeg" alt="forsidebillede2" class="højrebillede">
+
+        <div class="overskrift2">
+            <h2><i>Her kan du få den information, du behøver, for at føle dig hjemme i Aarhus</i></h2>
+        </div>
+
+        <div class="tekster">
+            <p>Opdag spændende arrangementer, events , udforsk byens mange muligheder og skab nye venskaber med medstuderende, mens du lærer byen at kende. Vi giver dig de ressourcer du skal bruge, for at kunne balancere mellem studie og fritid.  </p>
+        </div>
+
+        <div class="overskrift2">
+            <h2><i>Dyk ned i vores magasin, og bliv klogere!</i></h2>
+        </div>
+
+
+        <div class="tekster">
+            <p> Her finder du alt, hvad du har brug for: tips til boligsøgningen, viden om studierabatter, oversigt over byens muligheder, samt en kalender med lokale events. Gør dig klar til at tage del i Aarhus' liv og kultur—din nye hjem venter på dig! </p>
+        </div>
+
+
+       
+    </div>
+
+</div>
+    
+
+        </main>
+<!--Har fået hjælp fra chatGPT, og tilpasset mit univers: https://chatgpt.com/share/6710049e-b07c-8003-9a76-78ea8a121201-->
+        <footer>
+            <p>&copy; 2024 Tilflytter Aarhus. Alle rettigheder forbeholdes.</p>
+            <p>Email: info@tilflytteraarhus.dk</p>
+            <p>Telefon: +45 12 34 56 78</p>
+        </footer>
+    
+        
        
 </body>
     </html>
