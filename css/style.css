@@ -27,14 +27,14 @@
     text-align: center;
     background-color: #FFF2CC;
     position:fixed;
-  color: #942f35;
-  text-decoration: none;
-  font-size: 30px;
-  bottom: 700px;
-  padding: 30px;
-  width: 100%;
-  z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
-  cursor: pointer;
+    color: #942f35;
+    text-decoration: none;
+    font-size: 30px;
+    bottom: 700px;
+    padding: 30px;
+    width: 100%;
+    z-index: 1000; /* Sørger for at header altid er oven på alt andet - fik hjælp fra chatGPT til dette*/ 
+    cursor: pointer;
 }
 
 /*styling af links*/
