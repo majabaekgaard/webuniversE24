@@ -275,17 +275,22 @@ header label {
 }
 
 .venstrebillede {
-    max-width: 100%;
-    scale: 80%;
+    width: 75%;
+    top: 50px;
+    left: 60px;
     height: auto;
     position:relative;
+    border-radius: 25px;
 }
 
 .højrebillede {
-    max-width: 100%;
+    width: 70%;
     height: auto;
+    left: 60px;
     position:relative;
-    scale: 80%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 

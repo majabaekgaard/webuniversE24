@@ -199,16 +199,15 @@ header label {
 
 /* styling og positionering af billede - har fået hjælp fra chatgpt */ 
 .bolig {
-    width: 100%; /* Sørger for, at billedet fylder hele bredden af sin container */
-    scale: 50%;
-    margin-bottom: 10px;
-    margin-top: 1%;
+    width: 50%; /* Sørger for, at billedet fylder hele bredden af sin container */
+    top: 230px;
+    left: 350px;
     display: block; /* Sørger for, at billedet ikke har ekstra mellemrum under sig */
     margin: 0; /* Fjerner margin omkring billedet */
     padding: 0;
     position: absolute;
-    top: -20px; 
     z-index: 1; /* Sørger for, at billedet forsvinder bag headeren+logo+menubar*/
+    border-radius: 25px;
     
 }
 
@@ -271,10 +270,10 @@ z-index: 1;
 
 /*positionering af ikon2*/
 .ikon2{
-    margin-left: 35%;
-    scale: 40%;
-    margin-bottom: -40px;
-    margin-top: -40px;
+    margin-left: 40%;
+    width: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /*styling af overskrift i class "overskrift2*/

@@ -64,6 +64,9 @@ body {
     background-position: center;
     background-color:#f8f2e1 ;
     cursor: pointer;
+    position: absolute;
+    overflow-x: hidden;
+
 }
 
 /*styling af menubar - kopieret Murats kode - og tilpasset mit univers - https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed*/
@@ -212,7 +215,7 @@ header label {
 
 .ikon{
     margin-left: 40%;
-    scale: 60%;
+    width: 3%;
     }
 
 /*styling af overskrift i class "overskrift1*/
@@ -274,13 +277,13 @@ text-transform: none;
 
 .container3{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin-left: 100px;
     
 }
 
 .kultur{
-    scale: 80%;
+    width: 30%;
     margin-left: -50px;
     border-radius: 25px;
 
@@ -344,7 +347,7 @@ text-transform: none;
 
 
 .dokk1{
-    scale: 80%;
+    width: 30%;
     border-radius: 25px;
 
 }
@@ -356,22 +359,23 @@ text-transform: none;
 
 .container5{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin-left: 100px;
     
 }
 
 .festuge{
-scale: 70%;
-margin-left: -100px;
+width: 40%;
 border-radius: 25px;
+margin-bottom: 100px;
+margin-left: -50px;
 }
 
 
 .box4{
     display: block;
     color: #292c78;
-    width: 100%;
+    width: 90%;
     margin-left: 50px;
 
 }

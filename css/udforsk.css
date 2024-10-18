@@ -211,14 +211,15 @@ header label {
 
 /* styling og positionering af billede - har fået hjælp fra chatgpt */ 
 .map {
-    width: 100%; /* Sørger for, at billedet fylder hele bredden af sin container */
-    scale: 50%;
+    width: 50%; /* Sørger for, at billedet fylder hele bredden af sin container */
     margin-bottom: 10px;
     display: block; /* Sørger for, at billedet ikke har ekstra mellemrum under sig */
     margin: 0; /* Fjerner margin omkring billedet */
     position: absolute;
-    top: 30px; 
+    top: 280px; 
+    left: 355px;
     z-index: 1; /* Sørger for, at billedet forsvinder bag headeren+logo*/
+    border-radius: 25px;
     
 }
 
